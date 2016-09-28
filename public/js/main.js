@@ -12,6 +12,8 @@ $(function () {
       var text = data.text.split('##NAME##').join(name);
       $nameTempl.text(name);
       $textTempl.text(text);
-    })
+    }).fail(function (error) {
+      console.error(error);
+    });
   });
 });
