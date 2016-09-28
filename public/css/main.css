@@ -390,6 +390,12 @@ nav a:hover {
    font-style: italic;
 }
 
+.share-button {
+   display: none;
+   margin-top: 30px;
+   text-align: center;
+}
+
 .footer {
     text-align: center;
 }

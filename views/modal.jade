@@ -1,0 +1,21 @@
+#share.modal.fade(tabindex="-1", role="dialog", aria-labelledby="shareLabel", aria-hidden="true")
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.close(type="button", data-dismiss="modal")
+                    span(aria-hidden="true") ×
+                    span.sr-only Sulje
+                h4#shareLabel.modal-title
+                    i.fa.fa-share-alt
+                    span Jaa kavereille
+
+            .modal-body
+                .form-group
+                    input#modal-input.form-control(type="text")
+
+                a.twitter-share-button(href="", data-show-count="true") Tweet
+                .fb-share-button(data-href="" data-layout="button_count")
+
+            .modal-footer
+                button.btn.btn-default(type="button", data-dismiss="modal")
+                    span Sulje
