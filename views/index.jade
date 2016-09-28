@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1 Pöhinä-generaattori
+    p.
+        Pöhinä-generaattorilla luot itsellesi aidon #digitalist #approved -profiilikuvauksen.
+        Syötä kenttään nimesi ja generaattori luo sinulle uskottavan kuvauksen, jonka voit painattaa
+        esimerkiksi käyntikorttiisi!
+
+    .row
+        .col.col-xs-12.col-sm-6
+            .form-group
+                label(for='name') Nimi
+                input#name.form-control.input-lg(type="text", placeholder="Nimi")
+
+            .btn-container
+                button#submit.btn.btn-lg.btn-danger Generoi pöhinää!
+
+        .col.col-xs-12.col-sm-6
+            h3#name-template
+            p#text-template.pohina-text
