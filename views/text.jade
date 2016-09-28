@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    .row
+        .col.col-xs-12.col-sm-8.col-sm-offset-2
+            h1 Pöhinä-generaattori
+            p.
+                Tässä sinun
+                #[a(href="https://twitter.com/hashtag/digitalist?src=hash", target="_blank", rel="noopener noreferrer") #digitalist]
+                #[a(href="https://twitter.com/hashtag/pöhinä?src=hash", target="_blank", rel="noopener noreferrer") #pöhinä]
+                #[a(href="https://twitter.com/hashtag/approved?src=hash", target="_blank", rel="noopener noreferrer") #approved] -profiilikuvauksesi:
+
+            h3#name-template.pohina-title #{content.name}
+            p#text-template.pohina-text #{content.text}
+
+        .col.col-xs-12.col-sm-8.col-sm-offset-2
+            .btn-container.share-button
+                button#share-button.btn.btn-lg.btn-info Jaa kavereille
+
+    include modal

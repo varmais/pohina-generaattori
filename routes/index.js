@@ -38,7 +38,9 @@ router.get('/:id', function (req, res) {
         console.log('Parse error', error);
       }
     }
-    res.json(content);
+    res.render('text', {
+      content: content
+    });
   });
 });
 

@@ -390,8 +390,13 @@ nav a:hover {
    font-style: italic;
 }
 
-.share-button {
+.save-button {
    display: none;
+   margin-top: 30px;
+   text-align: center;
+}
+
+.share-button {
    margin-top: 30px;
    text-align: center;
 }
