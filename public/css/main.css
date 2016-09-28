@@ -378,6 +378,13 @@ nav a:hover {
    }
 }
 
+.header-title,
+.header-title:hover,
+.header-title:focus {
+   text-decoration: none;
+   color: #fff;
+}
+
 .btn-container {
    text-align: right;
 }
