@@ -372,14 +372,24 @@ nav a:hover {
    }
 }
 
-.content {
-   padding-top: 100px;
+@media only screen and (min-width: 768px) {
+   .content {
+      padding-top: 100px;
+   }
 }
 
 .btn-container {
    text-align: right;
 }
 
+.pohina-title, .pohina-form {
+    margin-top: 30px;
+}
+
 .pohina-text {
    font-style: italic;
+}
+
+.footer {
+    text-align: center;
 }
