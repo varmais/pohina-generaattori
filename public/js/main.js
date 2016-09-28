@@ -4,6 +4,12 @@ $(function () {
   var $nameTempl = $('#name-template');
   var $textTempl = $('#text-template');
 
+  $('a').click(function () {
+    if (window.ga) {
+      ga('send', 'event', 'Link', 'Click', $(this).text());
+    }
+  });
+
   $('#submit').click(function () {
     if (window.ga) {
       ga('send', 'event', 'Generate-button', 'Click');
