@@ -246,7 +246,6 @@ module.exports = [
   "Hänen ydinosaamista ovat digitalisaatio, digitaalisten liiketoimintamallien, ekosysteemien, työidentiteetin ja ketterän johtamisen kehittäminen.",
   "##NAME## on perustanut viisi yritystä ja sparrannut yli 100 liikeideaa ja uutta palvelua TOP100-yrityksille sekä pk-yrityksille että aloittaville teknologiayrityksille.",
   "Key Skills: •Sales and Business Development •Leadership •Training and Development •Strategic Problem Solving and Planning •Communication •Technical: MS Office; Webshop Solutions; ERP; e-Commerce; Digital Marketing & Services; Google Analytics 6 adwords",
-  "Aikaisemmin vastannut sosiaaliseen mediaan erikoistuneen Somecon Helsingin liiketoiminnasta ja kehittänyt johtavana konsulttina asiakasyritystensä asiakaspalvelua ja -viestintää verkossa.",
   "Erikoistunut tietoverkoissa käytävään reaaliaikaiseen vuorovaikutukseen, brändin rakentamiseen, sisältökonsepteihin ja strategioihin.",
   "Vapaa-aika kuluu musiikin, eräjormailun tai ruoan parissa ja sen kyllä huomaa.",
   "Olen monitoimikone pk-yrityksille, jotka haluavat saada lisää asiakkaita netistä.",
