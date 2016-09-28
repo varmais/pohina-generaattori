@@ -5,6 +5,10 @@ $(function () {
   var $textTempl = $('#text-template');
 
   $('#submit').click(function () {
+    if (window.ga) {
+      ga('send', 'event', 'Generate-button', 'Click');
+    }
+
     $.ajax({
       url: '/generator/random'
     }).then(function (data) {
