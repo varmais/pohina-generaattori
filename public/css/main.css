@@ -396,6 +396,20 @@ nav a:hover {
    text-align: center;
 }
 
+.social-share-container {
+   text-align: center;
+}
+
+.twitter {
+   padding: 5px;
+}
+
+.facebook {
+   padding: 5px;
+   position: relative;
+   bottom: 3px;
+}
+
 .footer {
     text-align: center;
 }

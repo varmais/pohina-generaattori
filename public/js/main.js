@@ -4,7 +4,7 @@ $(function () {
   var $nameTempl = $('#name-template');
   var $textTempl = $('#text-template');
   var $shareContainer = $('.share-button');
-  var $twitterBtn = $('.twitter-share-button');
+  var $twitterContainer = $('.twitter');
   var $fbBtn = $('.fb-share-button');
   var $modal = $('#share');
   var $modalInput = $('#modal-input');
@@ -54,14 +54,33 @@ $(function () {
       data: data
     }).then(function (data) {
       var shareUrl = SHARE_URL.replace('##ID##', data.id);
-      var twitterUrl = TWITTER_URL.replace('##IDD##', data.id);
-      $fbBtn.attr('data-href', shareUrl);
-      $twitterBtn.attr('href', twitterUrl);
+      reCreateTwitterButton(data.id);
+      reCreateFBButton(shareUrl);
       $modalInput.val(shareUrl);
       $modal.modal('show');
       $modalInput.select();
     }).fail(handleError);
   });
+
+  $modal.on('shown.bs.modal', function () {
+    $modalInput.focus();
+  });
+
+  function reCreateFBButton (shareUrl) {
+    if (window.FB) {
+      $fbBtn.attr('data-href', shareUrl);
+      FB.XFBML.parse();
+    }
+  }
+
+  function reCreateTwitterButton (id) {
+    if (window.twttr) {
+      var twitterUrl = TWITTER_URL.replace('##ID##', id);
+      var $link = $('<a>').attr('href', twitterUrl).addClass('twitter-share-button');
+      $twitterContainer.empty().append($link);
+      twttr.widgets.load();
+    }
+  }
 
   function handleError (error) {
     console.error(error);

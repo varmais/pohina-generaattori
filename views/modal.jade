@@ -11,10 +11,16 @@
 
             .modal-body
                 .form-group
-                    input#modal-input.form-control(type="text")
+                    .input-group
+                        span.input-group-addon
+                            i.glyphicon.glyphicon-copy
+                        input#modal-input.form-control(type="text")
 
-                a.twitter-share-button(href="", data-show-count="true") Tweet
-                .fb-share-button(data-href="" data-layout="button_count")
+                .social-share-container
+                    span.twitter
+                        a.twitter-share-button(href="", data-show-count="true")
+                    span.facebook
+                        .fb-share-button(data-href="" data-layout="button_count")
 
             .modal-footer
                 button.btn.btn-default(type="button", data-dismiss="modal")
