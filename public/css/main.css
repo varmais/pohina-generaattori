@@ -378,6 +378,10 @@ nav a:hover {
    }
 }
 
+body {
+   padding-bottom: 100px;
+}
+
 .header-title,
 .header-title:hover,
 .header-title:focus {
@@ -423,5 +427,6 @@ nav a:hover {
 }
 
 .footer {
-    text-align: center;
+   background: #fff;
+   text-align: center;
 }
