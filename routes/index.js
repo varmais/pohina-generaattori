@@ -1,8 +1,6 @@
 var express = require('express');
 var redis = require('redis');
 var router = express.Router();
-
-var REDIS_URL = process.env.REDIS_URL || 'localhost:6379';
 var client = redis.createClient(process.env.REDIS_URL);
 
 client.on("error", function (err) {
