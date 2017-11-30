@@ -12,9 +12,10 @@ block content
 
             p Saa käyttää, mutta ei oo pakko.
 
-            .form-group.pohina-form
-                label(for='name') Nimi:
-                input#name.form-control.input-lg(type="text", placeholder="Nimi")
+            form.pohina-form
+                .form-group
+                    label(for='name') Nimi:
+                    input#name.form-control.input-lg(type="text", placeholder="Nimi")
 
             .btn-container
                 button#submit.btn.btn-lg.btn-danger Generoi pöhinää!

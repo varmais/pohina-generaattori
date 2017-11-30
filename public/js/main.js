@@ -18,7 +18,9 @@ $(function () {
     }
   });
 
-  $('#submit').click(function () {
+  $('form').on('submit', function (ev) {
+    ev.preventDefault();
+
     if (window.ga) {
       ga('send', 'event', 'Generate-button', 'Click');
     }
